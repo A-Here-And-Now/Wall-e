@@ -1,0 +1,19 @@
+namespace walle.Helpers
+{
+    public static class ConcurrentActionExecutor
+    {
+        public static async Task<bool> DoSafeConcurrentActionAsync(SemaphoreSlim semaphore, Func<Task<bool>> action)
+        {
+            await semaphore.WaitAsync();
+
+            try
+            {
+                return await action();
+            }
+            finally
+            {
+                semaphore.Release();
+            }
+        }
+    }
+}
