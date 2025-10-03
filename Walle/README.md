@@ -1,4 +1,4 @@
-Your implementation is impressive — it already demonstrates solid OOP design, reasonable separation of concerns, and domain alignment with fintech/wallet infrastructure. Let’s build on that foundation with a **structured roadmap** that introduces:
+My goal was to quickly build out an implementation for Wallet processing logic that demonstrates solid OOP design, reasonable separation of concerns, and domain alignment with fintech/wallet infrastructure. I did not use an LLM to generate any of this code. After getting it started, I prompted an LLM to help me brainstorm some challenges to build on my foundation, which resulted in the following additional features:
 
 1. **Algorithmic depth**
 2. **Design and refactor challenges**
